@@ -1,0 +1,513 @@
+
+
+/*css page1.html*/
+
+
+*, ::before, ::after{
+	box-sizing: border-box;
+	margin: 0%;
+	padding: 0%;
+
+}
+
+
+html{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body,html {
+	margin:0;
+	padding:0;
+	width: 100%;
+	height: 100%;
+	
+  }
+
+
+.acceuil{
+	width: 100%;
+	height: 100%;
+	background: #333 url(/img/cool2.JPG) center / cover no-repeat;
+}
+
+
+h1{
+	font-weight: bold;
+	font-size: 50px;
+	padding-top: 250px ;
+	padding-left: 240px;
+	animation: apparition 7s ease-in-out;
+}
+
+@keyframes apparition {
+	from{
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+.media-container{
+	display: flex;
+	padding-left: 240px;
+	margin: 20px 0 40px 0;
+	animation: apparition 7s ease-in-out;
+	
+}
+
+
+.medias-btn{
+	width : 75px;
+	height: 75px;
+	border-radius: 50%;
+	background: rgb(135, 134, 134);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right:10px ;
+	cursor: pointer;
+
+}
+
+
+
+.icone{
+	width: 80px;
+	cursor: pointer;
+}
+
+.btn{
+	margin-left: 240px;
+	background: transparent;
+	text-decoration: none;
+	padding: 10px 30px;
+	border-radius: 3px;
+	border : 2px solid #333;
+	color: rgb(4, 4, 4); ;
+	transition: all 0.2s ease-in-out;
+	animation: apparition 7s ease-in-out;
+}
+
+.btn:hover{
+	background: #333;
+	color : #f1f1f1;
+	
+}
+
+
+
+/*css page2.html*/
+
+
+
+.clickAnim{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: linear-gradient(to top ,rgb(234, 117, 33),rgb(235, 206, 59));
+	position :absolute;
+	z-index: 9000;
+	transform: scale(0);
+	transform-origin: center;
+	animation: clickAnim 1s ease-in-out;
+}
+
+@keyframes clickAnim{
+	0% {
+		transform: scale(0);
+	}
+	50% {
+		transform: scale(2);
+		opacity: 1;
+	}
+
+	0% {
+		transform: scale(0);
+		opacity: 0;
+	}
+
+
+}
+
+
+
+.body2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color:lightblue;
+	animation: apparition 0.8s ease-in-out;
+	
+}
+
+
+
+.container{
+	position: relative ;
+	width: 100%;
+	max-width: 1000px;
+	min-height: 1000px;
+	background: rgb(255, 255, 255);
+	margin : 50px;
+	margin-top: 20%;
+	display: grid;
+	grid-template-columns: 1fr 2fr ;
+	animation: apparition 0.8s ease-in-out;
+	
+}
+
+
+.container .coté_gauche 
+{
+	position: relative;
+	background: burlywood;
+	padding: 40px;
+	border: 3px solid rgb(0, 0, 0);
+	animation: apparition 0.8s ease-in-out;
+
+
+}
+
+
+
+.container .coté_droit
+{
+	position: relative;
+	background: rgb(204, 204, 204);
+	padding: 40px;
+	border: 3px solid rgb(0, 0, 0);
+	animation: apparition 0.8s ease-in-out;
+
+
+}
+
+
+.profilTexte{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	animation: apparition 4s ease-in-out;
+}
+
+
+
+.profilTexte .imgBox{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 3px solid rgb(0, 0, 0);
+	animation: apparition 4s ease-in-out;
+
+
+}
+
+
+.profilTexte .imgBox img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	
+
+
+}
+
+.profilTexte h2{
+	color: rgb(0, 0, 0);
+	font-size: 1.5em;
+	margin-top: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 600;
+	line-height: 1.4em;
+	font-weight: bold;
+	animation: apparition 4s ease-in-out;
+}
+
+.profilTexte h2 span{
+	font-size: 0.8em;
+	font-weight: 300 ;
+	animation: apparition 2s ease-in-out;
+}
+
+
+
+.contact{
+	padding-top: 40px;
+	animation: apparition 4s ease-in-out;
+
+}
+
+
+.title{
+	animation: apparition 4s ease-in-out;
+	color: rgb(0, 0, 0);
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+
+}
+
+.contact ul{
+
+	position: relative;
+	animation: apparition 4s ease-in-out;
+
+}
+
+.contact ul li{
+
+	position: relative;
+	list-style: none;
+	margin : 10px  0 ;
+	cursor: pointer;
+	animation: apparition 5s ease-in-out;
+	
+}
+
+.contact ul li .icon{
+	display: inline-block ;
+	width: 30px;
+	font-size: 18px;
+	color: #131313;
+	animation: apparition 7s ease-in-out;
+}
+
+.contact ul li span{
+	color :#000000;
+	font-weight: 500;
+	animation: apparition 4s ease-in-out;
+}
+ 
+
+
+.experiences_pro li {
+	margin-bottom: 15px;
+	animation: apparition 4s ease-in-out;
+}
+
+.experiences_pro h5{
+	color :#000000;
+	font-weight: 700;
+	animation: apparition 4s ease-in-out;
+
+}
+
+
+.experiences_pro h4:nth-child(2){
+	color :#000000;
+	font-weight: 500;
+	animation: apparition 4s ease-in-out;
+
+}
+
+
+.experiences_pro h4{
+	color :#000000;
+	font-weight: 500;
+	animation: apparition 4s ease-in-out;
+
+}
+
+
+.langues .percent{
+	position: relative;
+	width: 100%;
+	height: 6px;
+	background: rgb(28, 24, 53);
+	display: block;
+	margin-top: 5px;
+	animation: apparition 4s ease-in-out;
+	
+	
+}
+
+.show_percent{
+	width: 90%;
+	animation: apparition 6s ease-in-out;
+}
+
+
+.show_percent2{
+	width: 80%;
+	animation: apparition 6s ease-in-out;
+}
+
+.show_percent3{
+	animation: apparition 6s ease-in-out;
+	width: 95%;
+}
+
+
+.langues .percent .show_percent{
+	position: absolute;
+	top:0;
+	left:0;
+	height: 100%;
+	background: lightblue;
+	animation: apparition 6s ease-in-out;
+}
+
+
+.langues .percent .show_percent2{
+	position: absolute;
+	top:0;
+	left:0;
+	height: 100%;
+	background: lightblue;
+	animation: apparition 6s ease-in-out;
+}
+
+.langues .percent .show_percent3{
+	position: absolute;
+	top:0;
+	left:0;
+	height: 100%;
+	background: lightblue;
+	animation: apparition 6s ease-in-out;
+}
+
+.liste{
+	list-style: none;
+}
+
+.about{
+	margin-bottom: 50px;
+	
+}
+
+.paragraphe_presentation{
+	animation: apparition 4s ease-in-out;
+}
+
+.about:last-child{
+	
+	margin-bottom: 0;
+	animation: apparition 4s ease-in-out;
+
+}
+
+.title2{
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+	animation: apparition 6s ease-in-out;
+}
+
+
+.about .box .h5{
+	text-transform: uppercase;
+	font-weight: 800;
+	animation: apparition 6s ease-in-out;
+}
+
+
+
+
+.skills .box{
+	position: relative;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 150px 1fr;
+	justify-content: center;
+	animation: apparition 4s ease-in-out;
+
+}
+
+
+.skills .box h4{
+	text-transform: uppercase;
+	font-weight: 500;
+	animation: apparition 4s ease-in-out;
+}
+
+
+.skills .box .percent{
+	position: relative;
+	width: 100%;
+	height: 10px;
+	background: black;
+	animation: apparition 2s ease-in-out;
+	
+}
+
+
+.skills .box .percent div{
+	position: absolute;
+	top : 0;
+	left :00;
+	height :100%;
+	background : lightblue;
+	animation: apparition 2s ease-in-out;
+}
+
+.show_percent4{
+	width: 75% ;
+	animation: apparition 2s ease-in-out;
+}
+
+.show_percent5{
+	width: 80%;
+	animation: apparition 2s ease-in-out;
+}
+
+
+.show_percent6{
+	width: 90%;
+	animation: apparition 2s ease-in-out;
+}
+
+
+.show_percent7{
+	width: 65%;
+	animation: apparition 2s ease-in-out;
+}
+
+
+
+.show_percent7{
+	width: 65%;
+	animation: apparition 2s ease-in-out;
+}
+
+
+
+.show_percent8{
+	width: 75%;
+	animation: apparition 2s ease-in-out;
+}
+
+
+
+.btn2{
+	position: absolute;
+	margin-top: 20%;
+	margin-left: 20%;
+	background: transparent;
+	text-decoration: none;
+	padding: 10px 30px;
+	border-radius: 3px;
+	border : 2px solid #333;
+	color: rgb(4, 4, 4); ;
+	transition: all 0.2s ease-in-out;
+	
+}
+
+.btn2:hover{
+	background: #333;
+	color : #f1f1f1;
+	
+}
+
